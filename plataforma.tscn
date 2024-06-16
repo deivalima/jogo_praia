@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dunip6jemxpxp"]
+
+[ext_resource type="Texture2D" uid="uid://b8cj5rs44hc1u" path="res://Sem título.png" id="1_fjvs3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b202h"]
+size = Vector2(971, 32)
+
+[node name="Plataforma" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-14, 8.1629)
+scale = Vector2(0.97, 0.69259)
+texture = ExtResource("1_fjvs3")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-13, 15)
+shape = SubResource("RectangleShape2D_b202h")
+metadata/_edit_lock_ = true
